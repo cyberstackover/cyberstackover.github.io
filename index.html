@@ -1,61 +1,1094 @@
-<!DOCTYPE HTML>
-<html>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 	<head>
-		<title>Herwin CV</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Geeklabs.tech &mdash; Software House Surabaya</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Geeklabs.tech is Software House Surabaya" />
+	<meta name="keywords" content="geeklabs, software, application, web, android, ios, surabaya, developer, freelancer" />
+	<meta name="author" content="geeklabsdev" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!--
+	Default Theme Style
+	You can change the style.css (default color purple) to one of these styles
+
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+
+
+	<style>
+	/* For demo purpose only */
+
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 140px;
+		position: fixed;
+		left: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/*border-radius: 4px;*/
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-left: -140px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 0;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: block;
+		margin-bottom: 5px!important;
+		float: left;
+		width: 100%;
+	}
+	#colour-variations li a {
+		width: 100%;
+		position: relative;
+		display: block;
+		overflow: hidden;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-ms-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+	}
+	#colour-variations li a:hover {
+	  	opacity: .9;
+	}
+	#colour-variations li a > span {
+		width: 33.33%;
+		height: 20px;
+		float: left;
+		display: -moz-inline-stack;
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+	}
+
+
+	.option-toggle {
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-right: -30px;
+		width: 30px;
+		height: 30px;
+		background: #f64662;
+		text-align: center;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		top: 2px;
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
 	</head>
-	<body class="is-loading">
+	<body>
+	<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		         <a class="navbar-brand" href="index.html">Geeklabs</a>
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+		            <li><a href="#" data-nav-section="work"><span>Work</span></a></li>
+		            <li><a href="#" data-nav-section="testimonials"><span>Testimonials</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>Services</span></a></li>
+		            <li><a href="#" data-nav-section="about"><span>About</span></a></li>
+		            <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li>
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>Herwindra Berlian</h1>
-							<p>Mobile Apps Developer</p>
-						</header>
-						<footer>
-							<ul class="icons">
-					
-								<li><a target="_blank" href="https://instagram.com/herwindra11/" class="fa-instagram">Instagram</a></li>
-								<li><a target="_blank" href="https://www.facebook.com/mherwindrab/" class="fa-facebook">Facebook</a></li>
-								<li><a target="_blank" href="https://www.linkedin.com/in/herwindra/" class="fa-linkedin">Linkedin</a></li>
-								<br>
-						
-								<li><a target="_blank" href="https://medium.com/@mherwindrab/" class="fa-medium">Medium</a></li>
-								<li><a target="_blank" href="https://baasii.blogspot.co.id/" class="fab fa-chrome">Blog</a></li>
-								<li><a target="_blank" href="http://bit.ly/bantusubs" class="fa-youtube">Youtube</a></li>
-								<br>
-								<li><a target="_blank" href="https://play.google.com/store/apps/dev?id=7037305723834318395" class="fab fa-google">PlayStore</a></li>
-								<li><a target="_blank" href="https://api.whatsapp.com/send?phone=6281939115544&text=testingithubio" class="fa-whatsapp">PlayStore</a></li>
-								<li><a target="_blank" href="https://t.me/herwindra" class="fa-paper-plane">Telegram</a></li>
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+		<div class="gradient"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="to-animate">Geek Labs</h1>
+							<h2 class="to-animate">Awesome technology with lean software development agile methodology in Surabaya</h2>
+						</div>
+					</div> <br><br>
+						<a href="http://herwin.geeklabs.tech" target="_blank" id="code" type="submit" class="btn btn-success; to-animate" style="width:400px;"><span class="glyphicon glyphicon-download"></span> Herwindra's Profile </a>
+				</div>
 				
-							
-							</ul>
-						</footer>
-					</section>
+			</div>
+		
+		</div>
+		<div class="slant"></div>
+	</section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-							<li>&copy; Herwindra Berlian</li><li>Design: <a target="_blank" href="http://geeklabs.tech">GeekLabs</a></li>
-						</ul>
-					</footer>
+	<section id="fh5co-intro">
+		<div class="container">
+			<div class="row row-bottom-padded-lg">
+				<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<i class="fh5co-intro-icon icon-bulb"></i>
+						<h2>Plan</h2>
+						<p>
+Big organization dwelt with complex business process. In order to enhance and enable system solution to cope with business process change or reengineering we provide various advisory solution such as IT Business Plan, Master Plan & Architecture, Monitoring, Service Management, and Project Management.</p>
+						<p><a href="#" class="btn btn-primary">Get In Touch</a></p>
+					</div>
+				</div>
+				<div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<i class="fh5co-intro-icon icon-wrench"></i>
+						<h2>Develop</h2>
+						<p>Develop specific system solution using suitable technology within affordable investment is our main specialization. Organizations
+consume many technologies along the way. In order the solution to bring more impact we provide integration and implementation within ours system solution.</p>
+						<p><a href="#" class="btn btn-primary">Click Me</a></p>
+					</div>
+				</div>
+				<div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<i class="fh5co-intro-icon icon-rocket"></i>
+						<h2>Launch</h2>
+						<p>We know system wouldn't work without the right peoples. In order to make sure the system solution meets their optimum performance for organization we also provide education service to prepare all the management & users, before the application is launched and used in production.</p>
+						<p><a href="#" class="btn btn-primary">Why Us?</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="row watch-video text-center to-animate">
+				<span>Watch the video</span>
+
+				<a href="https://www.youtube.com/watch?v=1OBz_BvOvdY" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-work" data-section="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Recent Works</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>We Make Beautiful Things! Check It Out!</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_1.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_1.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Paradigma Application</h2>
+						<span>Plant and Corporate Monitoring</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_2.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_2.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Ruang Ibadah</h2>
+						<span>Microbloging Platform</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_3.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_3.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>SIADU</h2>
+						<span>Sistem Akademik Terpadu</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_4.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_4.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Cyber System</h2>
+						<span>Open Platform Water Quality</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_5.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_5.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>CV. WiraNiaga</h2>
+						<span>Company Profile</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_6.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_6.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Bumdesa.online</h2>
+						<span>Ecomerce</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_7.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_7.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Mallo.id</h2>
+						<span>Investasi Online</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_8.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_8.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>SHE Aplication</h2>
+						<span>Safety Health Environment</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_9.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_9.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Nitip Application</h2>
+						<span>Aplikasi Nitip Barang Online</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_10.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_10.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Roboviper Application</h2>
+						<span>Pemrograman Visual Robot</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_11.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_11.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>BUP Website</h2>
+						<span>Bantuan Untuk Papua</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_12.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_12.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Passnote App</h2>
+						<span>Password Management Application</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_13.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_13.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Truck Tracking App</h2>
+						<span>Monitoring truck Real-time</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_14.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_14.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>EVO Magz</h2>
+						<span>Digital Magazine</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_15.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_15.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>XUPR Magz</h2>
+						<span>Digital Magazine</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_16.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_16.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>DC Store</h2>
+						<span>Online web store</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_17.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_17.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Masmomedia.com</h2>
+						<span>Electronic Online Store</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_18.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_18.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Roboboat PENS</h2>
+						<span>Official website</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_19.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_19.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>XUPR Store</h2>
+						<span>Online web store</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_20.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_20.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Perpus SDA App</h2>
+						<span>Library Sistem</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_21.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_21.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>E-Pijat App</h2>
+						<span>Augmented Reality App</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_22.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_22.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>CRM Application</h2>
+						<span>Customer Relationship Management</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_23.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_23.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Watchman App</h2>
+						<span>Emergency Application</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_24.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_24.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>WPermit App</h2>
+						<span>Working Permit Application</span>
+						</div>
+					</a>
+				</div>
+
+                <div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_25.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_25.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Semen Indonesia International</h2>
+						<span>Web Company Profile</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_26.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_26.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>SIMICE App</h2>
+						<span>Pengaduan masyarakat mobile app</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_27.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_27.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Moeslem Go</h2>
+						<span>Muslim Guide App</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_28.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_28.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Music Player</h2>
+						<span>Monitized by Google Admob</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_29.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_29.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>BentengJasa.co.id</h2>
+						<span>Web company profile</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_30.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_30.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>SAPAHAJI App</h2>
+						<span>Social Media for Hajj</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_31.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_31.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>MEDC App</h2>
+						<span>Medical Application</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_32.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_32.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Klenly App</h2>
+						<span>Laundry Agent Application</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_33.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_33.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>PMS App</h2>
+						<span>Performance Management System</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_34.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_34.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>CLD Appp</h2>
+						<span>Centralized Learning Design</span>
+						</div>
+					</a>
+				</div>
+				
+					<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_35.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_35.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Approval App</h2>
+						<span>Mobile Approval Application</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_36.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_36.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Wedding App</h2>
+						<span>Wedding Web Invitation</span>
+						</div>
+					</a>
+				</div>
+				
+					<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_37.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_37.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Papa Cari Uang</h2>
+						<span>Game of Setnov</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_38.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_38.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>SSIS App</h2>
+						<span>Spine surgery injury severity</span>
+						</div>
+					</a>
+				</div>
+
+            <div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="images/work_39.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="images/work_39.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Roboviper V.2</h2>
+						<span>Second Version of Roboviper</span>
+						</div>
+					</a>
+				</div>
 
 			</div>
+			<div class="row">
+				<div class="col-md-12 text-center to-animate">
+					<p> <a href="https://play.google.com/store/apps/developer?id=geeklabs.tech" target="_blank"> <img src="images/gpstore.png" alt="geeklabs" style="width:250px"></a></p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<!-- Scripts -->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+	<section id="fh5co-testimonials" data-section="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">What Our Specialty?</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>We'll build your business with amazing web and mobile apps.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Semangat dan sangat cerdas dalam menyelesaikan pekerjaan. Juga sangat kooperatif. &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person1.jpg" alt="Person"></figure>
+							<p>
+							Zenkul CEO of <a href="http://bumdesa.online/" target="_blank">bumdesa.online</a> <span class="subtext">Web Laravel Development</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Mau mendengarkan masukan - masukan baru dan melakukan extra effort, kecil tetapi tanda mengerti dan memahami kemauan klien. Saya rekomendasikan Mas Herwindra ini.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person2.jpg" alt="Person"></figure>
+							<p>
+							Dayurifanto CEO of <a href="http://bukuntukpapua.org/" target="_blank">bukuntukpapua.org</a> <span class="subtext">Wordpress Development</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Lancar kerjanya cepat dan komunikatif, mendengarkan semua keluhan terkait fitur yang sudah ada. &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person3.jpg" alt="Person"></figure>
+							<p>
+							Dhisaq OWNER of <a href="http://si-mice.com/" target="_blank">si-mice.com</a> <span class="subtext">Mobile Apps Development</span>
+							</p>
+						</div>
+					</div>
+				</div>
+                
+                <div class="row">
+				<div class="col-md-6 text-center to-animate">
+					<p> <a href="https://www.sribulancer.com/id/users/herwindra" target="_blank"> <img src="images/sribulancer.jpg" alt="geeklabs" style="width:250px"></a></p>
+					
+				</div>
+				
+					<div class="col-md-6 text-center to-animate">
+					<p> <a href="https://projects.co.id/public/browse_users/view/473a13/muhammad-herwindra-berlian" target="_blank"> <img src="images/projects.jpg" alt="geeklabs" style="width:250px"></a></p>
+					
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="fh5co-services" data-section="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Our Ultimate Services</h2>
+					<div class="row">
+						<div class="col-md-8 subtext to-animate">
+							<h3>We use latest technology with open source from big company framework.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 col-sm-2 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-wordpress"></i>
+					<h3>Wordpress</h3>
+				
+				</div>
+				<div class="col-md-2 col-sm-2 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-facebook"></i>
+					<h3>Facebook</h3>
+					
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-2 col-sm-2 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-google"></i>
+					<h3>Google</h3>
+				
+				</div>
+				
+				<div class="col-md-2 col-sm-2 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-apple"></i>
+					<h3>Apple</h3>
+					
+				</div>
+				<div class="col-md-2 col-sm-2 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-linux"></i>
+					<h3>Linux</h3>
+					
+				</div>
+				
+				<div class="col-md-2 col-sm-2 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-windows"></i>
+					<h3>Microsoft</h3>
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-about" data-section="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">About Me</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Passionate and interested on Information Technology. An innovative thinker, adaptive and conscientious person. Great persistency and determination. Love develop, dynamics and challenging learning environment.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<!--<div class="fh5co-person text-center to-animate">-->
+					<!--	<figure><img src="images/person1.jpg" alt="Image"></figure>-->
+					<!--	<h3>Jean Smith</h3>-->
+					<!--	<span class="fh5co-position">Web Designer</span>-->
+					<!--	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>-->
+					<!--	<ul class="social social-circle">-->
+					<!--		<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+					<!--		<li><a href="#"><i class="icon-facebook"></i></a></li>-->
+					<!--		<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+					<!--	</ul>-->
+					<!--</div>-->
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person4.jpg" alt="Image"></figure>
+						<h3>Muhammad Herwindra Berlian</h3>
+						<span class="fh5co-position">Project & Product Tech Enthusiast</span>
+						<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>-->
+						<ul class="social social-circle">
+							<li><a target="_blank" href="https://www.linkedin.com/in/herwindra/"><i class="icon-linkedin"></i></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/mherwindrab"><i class="icon-facebook"></i></a></li>
+							<li><a target="_blank" href="https://github.com/cyberstackover"><i class="icon-github"></i></a></li>
+								<li><a target="_blank" href="https://baasii.blogspot.com"><i class="icon-globe"></i></a></li>
+								<li><a target="_blank" href="https://youtube.com/c/muhammadherwindraberlian"><i class="icon-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!--<div class="fh5co-person text-center to-animate">-->
+					<!--	<figure><img src="images/person3.jpg" alt="Image"></figure>-->
+					<!--	<h3>Larry Ben</h3>-->
+					<!--	<span class="fh5co-position">Web Designer</span>-->
+					<!--	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>-->
+					<!--	<ul class="social social-circle">-->
+					<!--		<li><a href="#"><i class="icon-twitter"></i></a></li>-->
+					<!--		<li><a href="#"><i class="icon-facebook"></i></a></li>-->
+					<!--		<li><a href="#"><i class="icon-dribbble"></i></a></li>-->
+					<!--	</ul>-->
+					<!--</div>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-counters" style="background-image: url(images/full_image_1.jpg);" data-stellar-background-ratio="0.5">
+		<div class="fh5co-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center to-animate">
+					<h2>Fun Facts</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-briefcase to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="39" data-speed="5000" data-refresh-interval="50">39</span>
+						<span class="fh5co-counter-label">Finished projects</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-code to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="2343409" data-speed="5000" data-refresh-interval="50">2343409</span>
+						<span class="fh5co-counter-label">Line of codes</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-cup to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="132" data-speed="5000" data-refresh-interval="50">132</span>
+						<span class="fh5co-counter-label">Cup of coffees</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="fh5co-counter to-animate">
+						<i class="fh5co-counter-icon icon-people to-animate-2"></i>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="26" data-speed="5000" data-refresh-interval="50">26</span>
+						<span class="fh5co-counter-label">Happy clients</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-contact" data-section="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Get In Touch</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<!--<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-md">
+				<div class="col-md-6 to-animate">
+					<h3>Contact Info</h3>
+					<ul class="fh5co-contact-info">
+						<li class="fh5co-contact-address ">
+							<i class="icon-home"></i>
+							Jl Anusapati 109 Sawotratap, <br>Gedangan Sidoarjo
+						</li>
+						<li><i class="icon-phone"></i> +62 81939115544</li>
+						<li><i class="icon-envelope"></i>berlianherwindra@gmail.com</li>
+						<li><i class="icon-globe"></i> <a href="http://geeklabs.tech/" target="_blank">geeklabs.tech</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 to-animate">
+					<h3>Contact Me</h3>
+					<div class="form-group ">
+						<label for="name" class="sr-only">Name</label>
+						<input id="name" class="form-control" placeholder="Name" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="email" class="sr-only">Email</label>
+						<input id="email" class="form-control" placeholder="Email" type="email">
+					</div>
+					<div class="form-group ">
+						<label for="phone" class="sr-only">Phone</label>
+						<input id="phone" class="form-control" placeholder="Phone" type="text">
+					</div>
+					<div class="form-group ">
+						<label for="message" class="sr-only">Message</label>
+						<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+					</div>
+					<div class="form-group ">
+						<input class="btn btn-primary btn-lg" value="Send Message" type="submit">
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div id="map" class="to-animate"></div>
+	</section>
+
+
+	<footer id="footer" role="contentinfo">
+		<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
+		<div class="container">
+			<div class="">
+				<div class="col-md-12 text-center">
+					<p>&copy; GeekLabs Dev. All Rights Reserved. <br>Created by <a href="http://geeklabs.tech/" target="_blank">GeekLabs.tech</a></p>
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="https://www.linkedin.com/in/herwindra/"><i class="icon-linkedin"></i></a></li>
+						<li><a href="https://web.facebook.com/mherwindrab"><i class="icon-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/c/MuhammadHerwindraBerlian"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	<div id="colour-variations">
+		<a class="option-toggle"><i class="icon-gear"></i></a>
+		<h3>Preset Colors</h3>
+		<ul>
+			<li>
+				<a href="javascript: void(0);" data-theme="style">
+					<span style="background: #3f95ea;"></span>
+					<span style="background: #52d3aa;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript: void(0);" data-theme="style2">
+					<span style="background: #329998;"></span>
+					<span style="background: #6cc99c;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript: void(0);" data-theme="style3">
+					<span style="background: #9f466e;"></span>
+					<span style="background: #c24d67;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript: void(0);" data-theme="style4">
+					<span style="background: #21825C;"></span>
+					<span style="background: #A4D792;"></span>
+					<span style="background: #f2f2f2;"></span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<!-- End demo purposes only -->
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Counter -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
 
 	</body>
 </html>

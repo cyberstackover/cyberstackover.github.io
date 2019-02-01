@@ -1,0 +1,18 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^nitip\.herwintika\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nitip\.herwintika\.id$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/nitip\.net" [R=301,L]
+RewriteCond %{HTTP_HOST} ^bumdesa\.herwintika\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bumdesa\.herwintika\.id$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "https\:\/\/www\.bumdesa\.online\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^simice\.herwintika\.id$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.simice\.herwintika\.id$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^/?$ "http\:\/\/herwintika\.id\/simice" [R=301,L]
+

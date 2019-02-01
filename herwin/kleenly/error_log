@@ -1,0 +1,17 @@
+[09-Jan-2018 16:39:34 Asia/Jakarta] PHP Fatal error:  Call to a member function insert() on a non-object in /home/herwinti/public_html/kleenly/application/controllers/User.php on line 25
+[11-Jan-2018 22:19:19 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/herwinti/public_html/kleenly/application/controllers/User.php on line 39
+[11-Jan-2018 23:04:46 Asia/Jakarta] PHP Fatal error:  Class 'JWT' not found in /home/herwinti/public_html/kleenly/application/controllers/User.php on line 159
+[11-Jan-2018 23:05:34 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class Firebase\JWT\JWT in /home/herwinti/public_html/kleenly/application/libraries/jwt/JWT.php on line 23
+[11-Jan-2018 23:09:38 Asia/Jakarta] PHP Fatal error:  Call to a member function customer_list() on a non-object in /home/herwinti/public_html/kleenly/application/controllers/api/Restdata.php on line 224
+[11-Jan-2018 23:09:44 Asia/Jakarta] PHP Fatal error:  Call to a member function agen_list() on a non-object in /home/herwinti/public_html/kleenly/application/controllers/api/Restdata.php on line 182
+[11-Jan-2018 23:10:12 Asia/Jakarta] PHP Fatal error:  Cannot use object of type stdClass as array in /home/herwinti/public_html/kleenly/application/models/M_user.php on line 23
+[18-Jan-2018 21:46:22 Asia/Jakarta] PHP Fatal error:  Class 'Restserver\Libraries\REST_Controller' not found in /home/herwinti/public_html/kleenly/application/core/MY_Controller.php on line 20
+[18-Jan-2018 21:47:18 Asia/Jakarta] PHP Fatal error:  Access level to Restdata::$secretkey must be protected (as in class MY_Controller) or weaker in /home/herwinti/public_html/kleenly/application/controllers/api/Restdata.php on line 252
+[18-Jan-2018 21:48:17 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class Firebase\JWT\JWT in /home/herwinti/public_html/kleenly/application/libraries/jwt/JWT.php on line 23
+[18-Jan-2018 21:48:57 Asia/Jakarta] PHP Fatal error:  Class 'JWT' not found in /home/herwinti/public_html/kleenly/application/controllers/api/Restdata.php on line 57
+[18-Jan-2018 22:17:53 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_master::insert_service() in /home/herwinti/public_html/kleenly/application/controllers/api/Masterdata.php on line 142
+[24-Jan-2018 21:06:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'amount_tax' (T_STRING) in /home/herwinti/public_html/kleenly/application/controllers/api/Transaction.php on line 261
+[24-Jan-2018 21:09:28 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'amount_tax' (T_STRING) in /home/herwinti/public_html/kleenly/application/controllers/api/Transaction.php on line 261
+[01-Feb-2018 23:48:50 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class REST_Controller in /home/herwinti/public_html/kleenly/application/libraries/REST_Controller.php on line 2342
+[02-Feb-2018 03:20:20 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class REST_Controller in /home/herwinti/public_html/kleenly/application/libraries/REST_Controller.php on line 2342
+[04-Feb-2018 17:58:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/herwinti/public_html/kleenly/application/controllers/api/Transaction.php on line 393
